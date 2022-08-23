@@ -1,0 +1,1 @@
+java -jar s06_springbootweb-0.0.1-SNAPSHOT.jar

@@ -1,0 +1,28 @@
+2022-08-23 15:09:09.542  INFO 21448 --- [main] c.e.s.S06SpringbootwebApplication        : Starting S06SpringbootwebApplication v0.0.1-SNAPSHOT using Java 1.8.0_202 on DESKTOP-L6VJN12 with PID 21448 (D:\learn\19.ssm\代码\day02_mybatis_end代码\s06_springbootweb\部署jar\s06_springbootweb-0.0.1-SNAPSHOT.jar started by ZJ in D:\learn\19.ssm\代码\day02_mybatis_end代码\s06_springbootweb\部署jar)
+2022-08-23 15:09:09.544  INFO 21448 --- [main] c.e.s.S06SpringbootwebApplication        : The following profiles are active: prod
+2022-08-23 15:09:11.108  INFO 21448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-08-23 15:09:11.122  INFO 21448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-23 15:09:11.122  INFO 21448 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-08-23 15:09:11.191  INFO 21448 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-23 15:09:11.191  INFO 21448 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1594 ms
+2022-08-23 15:09:11.979  INFO 21448 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-23 15:09:12.491  INFO 21448 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@932bc4a, org.springframework.security.web.context.SecurityContextPersistenceFilter@4944252c, org.springframework.security.web.header.HeaderWriterFilter@2f8dad04, org.springframework.security.web.csrf.CsrfFilter@11bd0f3b, org.springframework.security.web.authentication.logout.LogoutFilter@51dcb805, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6d3a388c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a3d8174, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@732c2a62, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@57af006c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d29f28, org.springframework.security.web.session.SessionManagementFilter@41e1e210, org.springframework.security.web.access.ExceptionTranslationFilter@53976f5c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c130c45]
+2022-08-23 15:09:12.607  WARN 21448 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2022-08-23 15:09:12.612  INFO 21448 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-08-23 15:09:12.633  INFO 21448 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-23 15:09:12.654 ERROR 21448 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
