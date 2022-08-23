@@ -40,7 +40,7 @@ SpringBoot使用的是Slf4j作为日志门面，Logback（Logback 是log4j 框�
 使用：在需要打印日志的类上加`@Slf4j`注解，然后在具体的方法里使用:`log.info("xxx")`
 
 配置logback日志系统：
-```aidl
+```
 logback-spring.xml
 ```
 注：添加这个文件，就会将默认的springboot的日志配置给覆盖掉了
@@ -53,7 +53,7 @@ logback-spring.xml
 
 ### 6.多环境配置
 1. 开发环境与生产环境端口以及其他配置：
-```aidl
+```
 spring.profiles.active=dev
 application-dev.yml   # 开发环境
 application-prod.yml  # 生产环境
@@ -68,12 +68,12 @@ application-prod.yml  # 生产环境
 
 ### 7.打包运行
 直接maven管理器->`package`:
-```aidl
+```
 target/s06_springbootweb-0.0.1-SNAPSHOT.jar
 ```
 可以复制到任何位置如：`部署jar/s06_springbootweb-0.0.1-SNAPSHOT.jar`
 然后运行：
-```aidl
+```
 java -jar s06_springbootweb-0.0.1-SNAPSHOT.jar
 ```
 
@@ -105,7 +105,7 @@ maven的.m2/settings.xml文件配置阿里源
 ### 3.运行
 [可选] idea-`编辑配置`->`修改选项`->`启动前`->`添加启动前任务`->`启动web浏览器`
 中添加：
-```aidl
+```
 http://localhost:8011/index
 ```
 [可选]maven管理器->配置文件->选择：dev/prod
